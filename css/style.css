@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --pink: rgba(238,174,202,1);
+    --dark: #bfb5da;
+    --light: white;
+}
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);  
+    height: 100%;
+}
+
+/*Header*/
+h1 {
+    display: inline-block;
+    font-size: 48px;
+    font-family: 'Dancing Script', cursive;
+}
+.header {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 20px;
+    border: dashed var(--pink) 3px;
+}
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.header div ul {
+    list-style-type: none;
+}
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+.content {
+    padding-bottom: 150px;
+}
+
+/*About Me*/
+.about-me-p {
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+h2 {
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-shadow: 15px 15px 15px rgb(147, 104, 161);
+    padding-top: 20px;
+}
+.girl {
+    max-width: 300px;
+    max-height: 300px; 
+    box-shadow: 15px 15px 20px black;
+}
+.image-container{
+    justify-content: center;
+    display: flex;
+}
+
+/*Work first box*/
+.box1{
+    position: relative;
+}
+.mini-pic{
+    max-width: 650px;
+    border: solid 5px var(--pink);
+    filter: blur(2px);
+}
+.mini-pic:hover {
+    filter: none;
+}
+.dis{
+    background-color: var(--pink);
+    position: absolute;
+    bottom: 25px;
+}
+/*work second box*/
+.box2{
+    position: relative;
+    
+}
+.dog{
+    width: 300px;
+    height: 150px;
+    border: solid 5px var(--pink);
+    filter: blur(2px);
+}
+.dog:hover {
+    filter: none;
+}
+
+.horiseon{
+    width: 300px;
+    height: 150px;
+    border: solid 5px var(--pink);
+    filter: blur(2px);
+}
+.horiseon:hover{
+    filter: none;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: inherit;
+}
+
+/*footer*/
+#contact-me {
+    text-align: center;
+    padding-bottom: 30px;
+   
+}
+footer {
+    font-size: 10px;
+    clear: both;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 15px 15px 15px rgb(69, 91, 102);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark);
+    border: dashed var(--pink) 3px;
+}
+h3{
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h4{
+    padding-top: 25px;
+}
+
+/* On screen at is 768px or less, set background color to purple */
+@media screen and (max-width: 768px) {
+   section { 
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* On screen at is 768 or more, set header to white */
+@media screen and (max-width: 992px){
+    section {
+        display: flex;
+        flex-direction: row;
+        flex: 33%
+    }
+}

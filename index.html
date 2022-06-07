@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css">
     <title>Esmeralda Romero</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +20,17 @@
            <ul>
                <li>
                    <nav>
-                        <a class="nav-link" href="#About Me"> About Me</a>
+                        <a class="nav-link" href="#about-me"> About Me</a>
                     </nav>
                </li>
                <li>
                    <nav>
-                       <a class="nav-link" href="#My Work">My Work</a>
+                       <a class="nav-link" href="#my-work">My Work</a>
                    </nav>
                </li>
                <li>
                    <nav>
-                       <a class="nav-link" href="#Contact Me">Contact Me</a>
+                       <a class="nav-link" href="#contact-me">Contact Me</a>
                    </nav>
                </li>
            </ul>
@@ -37,16 +38,19 @@
     </header>
     </div>
 <!--Sections-->
-    <div>
+    <div class="content">
         <section>
             <div id="about-me">
-                <img src="20210114_110322.jpg" alt="dog">
+                <div class = "image-container">
+                    <img class="girl" src="./assets/Snapchat-1379729648.jpg" alt="me">
+                </div>
+                
                 <h2>About Me</h2>
-                <p>
-                    Hard work pays off. I did not have the resources to go to college so I knew I had to work my way up to get the career I wanted. Of course I didn't know right away what I wanted to do, so like any young adult I started my journey as a fast food cook.
+                <p class="about-me-p">
+                    Hard work pays off. I did not have the resources to go to college so I knew I had to work my way up to get the career I wanted. Of course, I didn't know right away what I wanted to do, so like any young adult, I started my journey as a fast-food cook.
                 </p>
-                <p>
-                     Fast forward a few years later I found myself getting a job at a call center for a big company where I sent a lot of time collecting data to submit tickets whenever there was issue with the website ether on my end or the customers. I became curious on what was the proses to fix the issues with the site. 
+                <p class="about-me-p">
+                    Fast forward a few years later I found myself getting a job at a call center for a big company where I spent a lot of time collecting data to submit tickets whenever there was an issue with the website either on my end or the customer's. I became curious on what was the proses to fix the issues with the site.
                 </p>
 
             </div>
@@ -54,20 +58,43 @@
         <section>
             <div id="my-work">
                 <h2>My Work</h2>
-
+                <div class="box1">
+                    <a href="https://esmy101.github.io/mini-project-2/ideal.html" target="_blank"><img class="mini-pic"src="./assets/Screenshot 2022-06-05 180046.png" alt="mini-project-2"></a>
+                    <div class="dis">
+                        <p>CSS Cheatsheet</p>
+                        <p>HTML/CSS</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box2">
+                       <a href="https://esmy101.github.io/Module-1/" target="_blank"><img class="horiseon" src="./assets/Horiseon.png" alt="dog"></a> 
+                        <div class="dis">
+                            <p>Horiseon</p>
+                            <p>HTML/CSS</p>
+                        </div>  
+                    </div>
+                    <div class="box2">
+                        <img class="dog" src="./assets/20210114_110322.jpg" alt="dog">
+                        <div class="dis">
+                            <p>Coming Soon</p>
+                            <p>&#128062</p>
+                        </div>  
+                    </div>
+                </div>
             </div>
         </section>
     </div>
 <!--Footer-->
+    <footer>
+        <diV>
+            <div id="contact-me">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: esmeralda.r.a@hotmail.com</li>
+                </ul>
 
-  
-    <div class="footer">
-        <div id="contact-me">
-        <h3>Contact</h3>
-            <ul>
-                <li>Email: esmeralda.r.a@hotmail.com</li>
-            </ul>
-
-        <h4>@2022 Module 2</h4>
-    </div>
+                <h4>Thank you &#128140</h4>
+            </div>
+        </div>
+    </footer>
 </body>
