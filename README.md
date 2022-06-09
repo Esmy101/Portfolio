@@ -4,4 +4,4 @@
 
 [portfolio](https://esmy101.github.io/Module-2/) 
 
-![portfolio](./Assets/pofile.png)
+![portfolio](./assets/pofile.png)
