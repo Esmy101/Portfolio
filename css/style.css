@@ -1,127 +1,115 @@
 * {
     box-sizing: border-box;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
 :root {
-    --pink: rgba(238,174,202,1);
-    --dark: #bfb5da;
+    --pink: #eeaeca;
+    --dark: black;
     --light: white;
 }
 body {
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);  
-    height: 100%;
+    
+    background: linear-gradient(to right, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /*Header*/
-h1 {
-    display: inline-block;
-    font-size: 48px;
-    font-family: 'Dancing Script', cursive;
-}
-.header {
-    background-color: var(--dark);
-    color: var(--light);
-    padding: 20px;
-    border: dashed var(--pink) 3px;
-}
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-.header div ul {
-    list-style-type: none;
-}
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
 .nav-link {
-    color: white;
+    color: var(--light);
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
     font-size: 15px;
+    float: right;
 }
-.content {
-    padding-bottom: 150px;
+.meetme{
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.email {
+    text-decoration: none;
+    color: var(--dark);
+    font-family:'Courier New', Courier, monospace;
 }
 
 /*About Me*/
-.about-me-p {
-    font-size: 30px;
-    font-family: 'Caveat', cursive;
-    text-align: center;
+#about-me{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--light);
     padding-left: 250px;
     padding-right: 250px;
+    box-shadow: 15px 15px 20px var(--dark);
+    border-radius:15px;
+    margin-block: 50px;
+    margin-left:70px;
+    margin-right: 70px;
+    border: solid 2px var(--dark);
 }
 h2 {
     font-size: xx-large;
     font-family: 'Courier New', Courier, monospace;
+    padding-top: 15px;
     text-align: center;
-    text-shadow: 15px 15px 15px rgb(147, 104, 161);
-    padding-top: 20px;
 }
-.girl {
-    max-width: 300px;
-    max-height: 300px; 
-    box-shadow: 15px 15px 20px black;
+.me {
+    max-width: 500px;
+    max-height: 500px; 
+   
 }
-.image-container{
-    justify-content: center;
-    display: flex;
+.icon{
+    text-align: center;
 }
 
 /*Work first box*/
-.box1{
+.project1{
     position: relative;
 }
 .mini-pic{
-    max-width: 650px;
-    border: solid 5px var(--pink);
+    border: dotted 5px var(--pink);
     filter: blur(2px);
+    box-shadow: 15px 15px 20px var(--dark);
 }
+.horiseon,
 .mini-pic:hover {
     filter: none;
 }
 .dis{
-    background-color: var(--pink);
+    background-color: var(--light);
     position: absolute;
-    bottom: 25px;
+    bottom: 20px;
 }
 /*work second box*/
-.box2{
+.project2{
     position: relative;
     
 }
-.dog{
-    width: 300px;
-    height: 150px;
-    border: solid 5px var(--pink);
+
+.horiseon{
+   
+    border: dotted 5px var(--pink);
     filter: blur(2px);
+    box-shadow: 15px 15px 20px var(--dark);
 }
-.dog:hover {
+:hover{
     filter: none;
 }
 
-.horiseon{
-    width: 300px;
-    height: 150px;
-    border: solid 5px var(--pink);
-    filter: blur(2px);
-}
-.horiseon:hover{
-    filter: none;
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 section {
     display: flex;
     flex-direction: column;
@@ -131,30 +119,15 @@ section {
 }
 
 /*footer*/
-#contact-me {
+#Thankyou {
+    color: var(--light);
     text-align: center;
-    padding-bottom: 30px;
-   
+    padding-bottom: 10px;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 15px;
+   text-shadow: 15px 15px 15px var(--dark);
 }
-footer {
-    font-size: 10px;
-    clear: both;
-    font-family: 'Press Start 2P', cursive;
-    text-shadow: 15px 15px 15px rgb(69, 91, 102);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--dark);
-    border: dashed var(--pink) 3px;
-}
-h3{
-    padding-bottom: 15px;
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-}
-h4{
-    padding-top: 25px;
-}
+
 
 /* On screen at is 768px or less, set background color to purple */
 @media screen and (max-width: 768px) {
