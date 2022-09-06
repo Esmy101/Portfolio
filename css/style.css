@@ -4,7 +4,6 @@
     margin: 0;
 }
 :root {
-    --pink: #eeaeca;
     --dark: black;
     --light: white;
 }
@@ -32,7 +31,6 @@ body {
     color: var(--light);
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
-    text-decoration: none;
     font-size: 15px;
     float: right;
 }
@@ -76,47 +74,37 @@ h2 {
     text-align: center;
 }
 
-/*Work first box*/
+/*Projects*/
+.project2,
 .project1{
-    position: relative;
+    position:relative;
+    margin-bottom: 70px;
 }
-.mini-pic{
-    border: dotted 5px var(--pink);
-    filter: blur(2px);
+.mySlides{
     box-shadow: 15px 15px 20px var(--dark);
 }
-.horiseon,
-.mini-pic:hover {
-    filter: none;
+.mySlides {
+    -webkit-transition: width 1s, height 1s;
+    transition: width 1s, height 1s;
 }
-.dis{
-    background-color: var(--light);
-    position: absolute;
-    bottom: 20px;
-}
-/*work second box*/
-.project2{
-    position: relative;
-    
-}
-
-.horiseon{
+.mySlides:hover {
+    min-width: 1000px;
+    min-height: 800px;
    
-    border: dotted 5px var(--pink);
-    filter: blur(2px);
-    box-shadow: 15px 15px 20px var(--dark);
 }
-:hover{
-    filter: none;
+.discription{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+.title{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.title:hover{
+    color: var(--light);
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    margin: inherit;
-}
 
 /*footer*/
 #Thankyou {
