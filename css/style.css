@@ -33,6 +33,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 15px;
     float: right;
+    margin-left: 30px;
 }
 .meetme{
     font-size: x-large;
@@ -50,14 +51,13 @@ body {
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     background-color: var(--light);
-    padding-left: 250px;
-    padding-right: 250px;
     box-shadow: 15px 15px 20px var(--dark);
     border-radius:15px;
     margin-block: 50px;
     margin-left:70px;
     margin-right: 70px;
     border: solid 2px var(--dark);
+    text-align: center;
 }
 h2 {
     font-size: xx-large;
@@ -87,11 +87,7 @@ h2 {
     -webkit-transition: width 1s, height 1s;
     transition: width 1s, height 1s;
 }
-.mySlides:hover {
-    min-width: 1000px;
-    min-height: 800px;
-   
-}
+
 .discription{
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
@@ -119,17 +115,30 @@ h2 {
 
 /* On screen at is 768px or less, set background color to purple */
 @media screen and (max-width: 768px) {
-   section { 
-        display: flex;
-        flex-direction: row;
+   .content{
+    margin-left: 50px;
+   }
+   .title,
+   .discription{
+    text-align: center;
+   }
+    .nav-link {
+        display: block;
+        margin:4px;
+        height: 35px;
+        width:80px;
+        background: var(--dark);
+        border-radius: 9px;
+        font-size: 8px;
+        text-align: center;
     }
+   
 }
 
-/* On screen at is 768 or more, set header to white */
-@media screen and (max-width: 992px){
-    section {
-        display: flex;
-        flex-direction: row;
-        flex: 33%
-    }
+@media screen and (min-width: 769px) {
+.mySlides:hover {
+    min-width: 1000px;
+    min-height: 800px;
+   
+}
 }
