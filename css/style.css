@@ -120,7 +120,7 @@ h2 {
 
 
 /* On screen at is 768px or less, set background color to purple */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
    .content{
     margin-left: 50px;
    }
@@ -141,7 +141,7 @@ h2 {
    
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1081px) {
 .gif:hover {
     min-width: 1000px;
     min-height: 800px;
