@@ -1,7 +1,9 @@
 # Portfolio
 
- A website that displays some projects that I have done, a about me section and a way to contact me. 
+## Description
 
-[portfolio](https://esmy101.github.io/Module-2/) 
+A website that displays my contact information, skills and about me.
+
+[portfolio](https://esmy101.github.io/Module-2/)
 
 ![portfolio](./assets/pofile.png)

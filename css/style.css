@@ -74,16 +74,22 @@ h2 {
     text-align: center;
 }
 
+/*Skills*/
+.skills{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+         column-count: 3;
+}
 /*Projects*/
 .project2,
 .project1{
     position:relative;
     margin-bottom: 70px;
 }
-.mySlides{
+.gif{
     box-shadow: 15px 15px 20px var(--dark);
 }
-.mySlides {
+.gif {
     -webkit-transition: width 1s, height 1s;
     transition: width 1s, height 1s;
 }
@@ -136,7 +142,7 @@ h2 {
 }
 
 @media screen and (min-width: 769px) {
-.mySlides:hover {
+.gif:hover {
     min-width: 1000px;
     min-height: 800px;
    
