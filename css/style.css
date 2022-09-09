@@ -147,6 +147,9 @@ button {
        height: 150px;
        width: 100px;
     }
+    #about-me{
+        margin-top: 150px;
+    }
 }
 
 @media screen and (min-width: 1081px) {
