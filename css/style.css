@@ -137,15 +137,15 @@ button {
         display: block;
         margin:4px;
         height: 35px;
-        width:80px;
+        width:125px;
         background: var(--dark);
         border-radius: 9px;
-        font-size: 8px;
+        font-size:small;
         text-align: center;
     }
     button {
-       height: 90px;
-       width: 60px;
+       height: 150px;
+       width: 100px;
     }
 }
 
