@@ -74,6 +74,7 @@ h2 {
     text-align: center;
 }
 
+b
 /*Skills*/
 .skills{
     -webkit-column-count: 3;
@@ -124,9 +125,11 @@ h2 {
    .content{
     margin-left: 50px;
    }
+   .mySlides,
    .title,
    .discription{
     text-align: center;
+    font-size: xx-large;
    }
     .nav-link {
         display: block;
@@ -138,7 +141,7 @@ h2 {
         font-size: 8px;
         text-align: center;
     }
-   
+
 }
 
 @media screen and (min-width: 1081px) {
