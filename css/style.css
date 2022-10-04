@@ -89,11 +89,10 @@ button {
 .project1{
     position:relative;
     margin-bottom: 70px;
+    padding-top: 120px;
 }
 .gif{
     box-shadow: 15px 15px 20px var(--dark);
-}
-.gif {
     -webkit-transition: width 1s, height 1s;
     transition: width 1s, height 1s;
 }
@@ -103,12 +102,14 @@ button {
     font-size: large;
 }
 .title{
-    text-decoration: none;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline var(--dark);
 }
-.title:hover{
-    color: var(--light);
+.tools{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:large;
 }
 
 
