@@ -85,7 +85,11 @@ button {
          column-count: 3;
 }
 /*Projects*/
-.project2,
+.project3{
+    position:relative;
+    margin-bottom: 70px;
+    padding-top: 170px;
+}
 .project1{
     position:relative;
     margin-bottom: 70px;
@@ -156,8 +160,8 @@ button {
 
 @media screen and (min-width: 1081px) {
 .gif:hover {
-    min-width: 1000px;
-    min-height: 800px;
+    min-width: 700px;
+    min-height: 500px;
    
 }
 }
