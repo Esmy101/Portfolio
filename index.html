@@ -6,9 +6,10 @@
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css">
         <title>Esmeralda Romero</title>
+        <!--Google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
         <!--ICons-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,60 +18,153 @@
     </head>
 
     <body>
-        
+     
+        <div class="snow"></div>
         <!--Header-->
-
-        <div class="head">
-            
-            <div>
-                
+        <header>
+            <div> 
                 <nav>
-                    <a class="nav-link" href="work.html">Projects</a>
-                    <a class="nav-link" href="index.html">About Me</a>
+                    <a class="nav-link" >Projects</a>
+                    <a class="nav-link" >Skills</a>
+                    <a class="nav-link" >About Me</a>
+                    
                 </nav>     
             </div> 
-            <p class="meetme">MEET ME:</p>
+        </header>
+
+                
+
+        <!--About ME-->  
+        
+        <div class="w3-container">
+            <img class="pic" src="assets/Esmy.jpg" alt="me">
+            <h1 class="w3-animate-left"> Esmeralda Romero</h1>
+            <h5>Web Developer | Front End | Back End | Full Stack</h5>
         </div>
 
-        <!--About ME-->            
-        <div id="about-me">
-            <div class="w3-container">
-            <img class="me" src="assets/IMG_20220912_032528_435.jpg" alt="me">
-            </div>
-            <div class="mySlides">
-                <div class="w3-container">
-                    <h2 class="w3-animate-left"> Esmeralda Romero</h2>
+
+
+        <h1>About Me</h1>
+        <div class="aboutMeBox">
+            
+            <p class="about-me-p  w3-animate-right">
+                Full-stack web developer leveraging customer service and system testing background, and have earned a certificate in full-stack development from Michigan State University, with newly developed skills in JavaScript, CSS, HTML, My SQL, Node.js, and Bootstrap. I am a critical thinker when it comes to app design and functionality. I aim to try new things and further develop existing or develop new skills.
+            </p>
+            <img class="dogcat" src="assets/dog&cat.jpg" alt="dog&cat">
+        </div>
+       
+
+        <!--Skills-->
+        <h1>Skills</h1>
+        <div class="skillBox">
+            
+            <ul class="skills">
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>MySQL</li>
+                <li>Git</li>
+                <li>APIs</li>
+                <li>NodeJS</li>
+                <li>Handlebars</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+                <li>Python</li>
+                <li>MERN</li>
+                <li>Tailwind</li>
+                <li>C</li>
+                <li>C++</li>
+            </ul>
+        </div>
+
+
+        <!--Projects-->
+        <h1>Projects</h1>
+        
+        <!--Project 1-->
+        <div class="grid-container">
+            <div class="project1 w3-col m5 l4 w3-content w3-display-container"style="min-width: 500px">
+                <img class="gif" src="assets/projects/parkme.gif" style="width: 100%" />
+            </div>   
+            <div>
+                <h2 class="title">Park Me</h2>
+                <p class="discription">
+                    If you often travel to bigger cities, you know that it is a STRUGGLE
+                    to find a parking garage. No problem, with te Park Me application
+                    you just enter your destination and it will show all the near by
+                    garages and give you directions on how to get there.
+                </p>
+                <h3 class="tools">Tools:</h3>
+                <h5>HTML, CSS, JavaScript, jQuery, Google Maps & Geolocations
+                    API, Google Font 
+                    </h5>
+                <div class="icon">
+                    <a href="https://github.com/calihuddleston/park-me" target="_blank"><i class="fa fa-github" style="font-size:30px"></i></a>
+                    <a href="https://calihuddleston.github.io/park-me/index.html" target="_blank"><i class="fa fa-desktop" style="font-size:30px"></i></a>
                 </div>
-                <div class="w3-container">
-                    <p class="about-me-p  w3-animate-right">
-                    As of May 2022 I've been attending a coding bootcamp at Michigan State University to become a fullstack web developer. I am a critical thinker when it comes to app design and functionality. I aim to try new things and further develop existing or develop new skills.
+            </div>
+        </div>    
+        
+
+
+        <!--Project 2-->
+    
+        <div class="grid-container">
+            <div class="project1 w3-col m5 l4 w3-content w3-display-container"style="min-width: 500px">
+                <img class="gif" src="assets/projects/rabbitHabit.png" style="width: 100%" />
+            </div>
+            <div>
+                <h2 class="title">Rabbit Habit</h2>
+                    <p class="discription">
+                        Everyone has some trouble breaking bad habits as well as starting
+                        some good ones. It can become very frustrating when you don't know
+                        where to started and how to keep yourself motivated. It's a easy
+                        start with Rabbit Habit! This application will not only help you
+                        keep track of your habits but as well as keep you engaged where for
+                        each habit goal you accomplish, you will be rewarded with a carrot
+                        that will count as a life point to be use towards playing a rabbit
+                        game.
                     </p>
+                <h3 class="tools">Tools:</h3>
+                <h5 class="tool">HTML, CSS, JavaScript, jQuery, APIs, Bootstrap, Google Font, Photoshop
+                </h5>
+                <div class="icon">
+                    <a href="https://github.com/BillyFletcher99/Rabit-Habit" target="_blank"><i class="fa fa-github" style="font-size:30px"></i></a>
+                    <a href="https://rabit-habit.herokuapp.com/login" target="_blank"><i class="fa fa-desktop" style="font-size:30px"></i></a>
                 </div>
             </div>
-            <!--second slide-->
-            <div class=" mySlides w3-container">
-                <h2>Skills</h2>
-                <ul class="skills">
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>JavaScript</li>
-                    <li>React.js</li>
-                    <li>Bootstrap</li>
-                    <li>jQuery</li>
-                    <li>MySQL</li>
-                    <li>Git</li>
-                    <li>APIs</li>
-                    <li>NodeJS</li>
-                    <li>Handlebars</li>
-                    <li>MongoDB</li>
-                    <li>Mongoose</li>
-                    <li>Python</li>
-                    <li>MERN</li>
-                    <li>Tailwind</li>
-                    <li>C</li>
-                    <li>C++</li>
-                </ul>
+            
+        </div>
+
+        <!-- Project 3 -->
+            
+        <div class="grid-container">
+            <div  class="project1 w3-col m5 l4 w3-content   w3-display-container"
+            style="min-width: 500px">
+            <img class="gif" src="assets/projects/Newleaf.png" style="width: 100%" />
             </div>
+            <div>
+                <h2 class="title">A New Leaf</h2>
+                <p class="discription">
+                    Do you love plants but have a hard time keeping track on their watering schedule? We’re here to help! Welcome to A New Leaf! A whole new plant experience like you’ve never had before. With this app we’ll have an array of general plant knowledge and upkeep for your babies at the tips of your fingers. And of course, you’ll never miss a watering day again
+                </p>
+                <h3 class="tools">Tools:</h3>
+                <h5 class="tool"> JavaScript, jQuery, APIs, Bootstrap, React, Node, Tailwindcss, Photoshop
+                </h5>
+                <div class="icon">
+                    <a href="https://https://github.com/BillyFletcher99/a-new-leaf-application" target="_blank"><i class="fa fa-github" style="font-size:30px"></i></a>
+                    <a href="https://a-newer-leaf.herokuapp.com/" target="_blank"><i class="fa fa-desktop" style="font-size:30px"></i></a>
+                </div>
+            </div>
+           
+        </div>  
+
+
+        <!--Icons--> 
+        <footer>
             <div class="icon">
                 <p>
                     <i class="material-icons">mail</i>
@@ -85,28 +179,23 @@
                 </p>
             </div>
             <div class="icon">
-             
+            
                 <a href="https:www.linkedin.com/in/esmeralda-romero-412735219/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
-           
+        
                 <a href="https://github.com/esmy101" target="_blank"><i class="fa fa-github" style="font-size:30px"></i></a>
 
                 <a href="https://docs.google.com/document/d/12xhlzqK5HWuLAVh9L3m1BVi4pIzkUOLKgyoKHd9yE5A/edit?usp=sharing" target="_blank"><i class="fa fa-user-circle-o" style="font-size:30px"></i></a>
 
                 <a href="https://www.instagram.com/esmy.code/" target="_blank"> <i class="fa fa-instagram" style="font-size:30px"></i></a>
-             
+            
             </div>
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-        </div>
-           
-        
-        <!--Footer-->
-    
-        <diV>
-            <div id="Thankyou">
-                <h4>Thank you &#128140</h4>
+
+            <!--Footer-->
+            <diV>
+                <div id="Thankyou">
+                    <h4>Thank you &#128140</h4>
+                </div>
             </div>
-        </div>
-        <script src="./script.js"></script>
+        </footer>
     </body>
 </html>

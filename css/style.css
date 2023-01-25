@@ -1,94 +1,132 @@
 * {
     box-sizing: border-box;
-    padding: 10px;
+    padding: 5px;
     margin: 0;
+    
 }
 :root {
-    --dark: black;
-    --light: white;
-}
-body {
-    
-    background: linear-gradient(to right, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
-    background-size: 400% 400%;
-    animation: gradient 20s ease infinite;
-    
-}
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    --white: white;
+    --dark: #040F16;
+    --light:#667;
+    --Dblue:#000022;
+    --blue: #001242;
+    --Lblue:#005E7C;
 }
 
+
 /*Header*/
+header{
+    background-color: var(--Dblue);
+    border-radius:10px;
+    width: 100%;
+    height:80px;
+
+}
 .nav-link {
-    color: var(--light);
+    color: var(--white);
     text-decoration: none;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
     float: right;
     margin-left: 30px;
+    font-weight:bolder;
 }
 .meetme{
     font-size: x-large;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Source Code Pro', monospace;
     font-weight: bold;
 }
 .email {
     text-decoration: none;
-    color: var(--dark);
-    font-family:'Courier New', Courier, monospace;
 }
 
 /*About Me*/
-#about-me{
+.aboutMeBox{
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: var(--light);
-    box-shadow: 15px 15px 20px var(--dark);
+    font-family: 'Source Code Pro', monospace;
+    background-color: var(--Dblue);
+    box-shadow: 5px 5px 10px var(--light);
     border-radius:15px;
     margin-block: 50px;
     margin-left:70px;
     margin-right: 70px;
-    border: solid 2px var(--dark);
+    border: solid 1px var(--dark);
     text-align: center;
+    color: var(--white);
+    padding-top: 25px;
 }
-h2 {
+h1 {
+    color: var(--white);
     font-size: xx-large;
-    font-family: 'Courier New', Courier, monospace;
-    padding-top: 15px;
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 5px;
     text-align: center;
+    text-decoration: underline var(--white);
+    
 }
-.me {
-    max-width: 500px;
-    max-height: 500px; 
-    border-radius:30px;
-   
-}
-.icon{
+h5{
+    color: var(--white);
+    font-size: xx-large;
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 5px;
     text-align: center;
 }
 
-button {
-    height: 90px;
+/*pics*/
+.pic {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    max-width: 300px;
+    max-height: 300px; 
+    border-radius:250px;
 }
+
+.dogcat{
+    max-width: 200px;
+    max-height: 200px; 
+    border-radius:300px;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+
 /*Skills*/
+.skillBox{
+    background-color: var(--Dblue);
+    margin-block: 50px;
+    margin-left:70px;
+    margin-right: 70px;
+    border-radius:30px;
+    box-shadow: 5px 5px 10px var(--light);
+    border: solid 1px var(--dark);
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+}
 .skills{
+    text-align: center;
+    color: var(--white);
     -webkit-column-count: 3;
     -moz-column-count: 3;
          column-count: 3;
+
 }
+
+
 /*Projects*/
-.project3{
-    position:relative;
-    margin-bottom: 70px;
-    padding-top: 170px;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.grid-container > div {
+  
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 .project1{
     position:relative;
@@ -96,36 +134,55 @@ button {
     padding-top: 120px;
 }
 .gif{
-    box-shadow: 15px 15px 20px var(--dark);
+    box-shadow: 15px 15px 20px var(--light);
     -webkit-transition: width 1s, height 1s;
     transition: width 1s, height 1s;
-}
-
-.discription{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
+    border-radius:50px;
+    display: block;
+    grid-row: 1 / span 2;
 }
 .title{
+    color: var(--white);
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: underline var(--dark);
+    font-family: 'Source Code Pro', monospace;
+    
+    
+}
+.discription{
+    font-family: 'Source Code Pro', monospace;
+    font-size: large;
+    color: var(--white);
+    text-align: end;
 }
 .tools{
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Source Code Pro', monospace;
     font-size:large;
+    color: var(--white);
+    text-align:start;
 }
 
 
+
+/*Icons*/
+.icon{
+    padding-top: 25px;
+    color: var(--Lblue);
+    text-align: center;
+    text-shadow: 5px 5px 5px var(--dark);
+}
+
 /*footer*/
 #Thankyou {
-    color: var(--light);
+    padding-top: 40px;
+    color: var(--Lblue);
     text-align: center;
     padding-bottom: 10px;
    font-family: 'Press Start 2P', cursive;
    font-size: 15px;
    text-shadow: 15px 15px 15px var(--dark);
 }
+
 
 
 /* On screen at is 768px or less, set background color to purple */
@@ -139,29 +196,57 @@ button {
     text-align: center;
     font-size: xx-large;
    }
-    .nav-link {
-        display: block;
-        margin:4px;
-        height: 35px;
-        width:125px;
-        background: var(--dark);
-        border-radius: 9px;
-        font-size:small;
-        text-align: center;
-    }
-    button {
-       height: 150px;
-       width: 100px;
-    }
+  
+   
     #about-me{
         margin-top: 150px;
     }
 }
 
-@media screen and (min-width: 1081px) {
+/* @media screen and (min-width: 1081px) { 
 .gif:hover {
     min-width: 700px;
     min-height: 500px;
    
 }
+}*/
+
+
+/* snow */
+html {
+    height: 350%;
+    background: linear-gradient(#123 50%, #667);
+    overflow: scroll;
 }
+.snow, .snow:before, .snow:after {
+    position: absolute;
+    top: -600px;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: radial-gradient(5px 5px at 499px 230px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 515px 551px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 180px 568px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 402px 127px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 451px 588px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 335px 403px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 171px 118px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 486px 250px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 46px 588px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 523px 496px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 371px 383px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 374px 102px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 527px 300px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 530px 95px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 362px 367px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 290px 503px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 215px 575px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 506px 517px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 222px 254px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 534px 81px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 81px 563px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 544px 407px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 588px 370px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 352px 560px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 290px 153px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 112px 63px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 79px 581px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 43px 426px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 134px 21px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 524px 318px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 541px 66px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 7px 287px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 548px 199px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 535px 409px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 530px 272px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 390px 120px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 356px 591px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 233px 514px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 371px 424px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 40px 437px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 346px 525px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 467px 378px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 328px 295px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 158px 399px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 255px 11px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 513px 324px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 347px 324px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 577px 144px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 210px 237px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 11px 434px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 218px 103px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 492px 214px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 128px 366px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 283px 321px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 346px 181px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 313px 384px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 65px 442px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 411px 297px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 211px 184px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 62px 436px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 425px 443px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 7px 230px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 182px 189px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 432px 464px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 337px 497px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 475px 117px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 538px 500px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 251px 334px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 114px 441px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 419px 244px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0));
+    background-size: 600px 600px;
+    animation: snow 3s linear infinite;
+    content: "";
+}
+.snow:after {
+    margin-left: -200px;
+    opacity: .1;
+    animation-duration: 6s;
+    animation-direction: reverse;
+    filter: blur(3px);
+}
+.snow:before {
+    animation-duration: 9s;
+    animation-direction: reverse;
+    margin-left: -300px;
+    opacity: .1;
+    filter: blur(1.5px);
+}
+@keyframes snow {
+    to {
+       transform: translateY(600px);
+   }
+}
+ 
