@@ -16,6 +16,9 @@
 
 /*Header*/
 header{
+    -webkit-sticky;
+    position: sticky;
+    top: 0;
     background-color: var(--Dblue);
     border-radius:10px;
     width: 100%;
@@ -41,6 +44,9 @@ header{
 }
 
 /*About Me*/
+.aboutMe{
+    padding-top: 250px;
+}
 .aboutMeBox{
     font-size: 20px;
     font-family: 'Source Code Pro', monospace;
@@ -84,17 +90,19 @@ h5{
 }
 
 .dogcat{
-    max-width: 200px;
-    max-height: 200px; 
+    max-width:300px;
+    max-height: 350px; 
     border-radius:300px;
     align-items: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 
 /*Skills*/
 .skillBox{
+    padding-bottom: 50px;
+    padding-top: 50px;
     background-color: var(--Dblue);
     margin-block: 50px;
     margin-left:70px;
@@ -185,6 +193,7 @@ h5{
 
 
 
+
 /* On screen at is 768px or less, set background color to purple */
 @media screen and (max-width: 1080px) {
    .content{
@@ -197,7 +206,7 @@ h5{
     font-size: xx-large;
    }
   
-   
+  
     #about-me{
         margin-top: 150px;
     }
@@ -214,7 +223,7 @@ h5{
 
 /* snow */
 html {
-    height: 350%;
+    height: 425%;
     background: linear-gradient(#123 50%, #667);
     overflow: scroll;
 }
