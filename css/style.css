@@ -199,17 +199,17 @@ h5{
    .content{
     margin-left: 50px;
    }
-   .mySlides,
+   
    .title,
    .discription{
     text-align: center;
     font-size: x-large;
    }
   
+  .snow, .snow:before, .snow:after{
+    visibility: hidden;
+  }
   
-    #about-me{
-        margin-top: 150px;
-    }
 }
 
 /* @media screen and (min-width: 1081px) { 
