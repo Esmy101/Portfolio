@@ -194,7 +194,7 @@ h5{
 
 
 
-/* On screen at is 768px or less, set background color to purple */
+/* On screen at is 768px or less, hide snow */
 @media screen and (max-width: 1080px) {
    .content{
     margin-left: 50px;
@@ -209,21 +209,18 @@ h5{
   .snow, .snow:before, .snow:after{
     visibility: hidden;
   }
+  html{
+    max-height: auto;
+    
+  }
   
 }
 
-/* @media screen and (min-width: 1081px) { 
-.gif:hover {
-    min-width: 700px;
-    min-height: 500px;
-   
-}
-}*/
 
 
 /* snow */
 html {
-    height: 425%;
+    height: auto;
     background: linear-gradient(#123 50%, #667);
     overflow: scroll;
 }
