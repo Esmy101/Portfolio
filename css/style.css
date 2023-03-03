@@ -177,7 +177,8 @@ h5{
     padding-top: 25px;
     color: var(--Lblue);
     text-align: center;
-    text-shadow: 5px 5px 5px var(--dark);
+    font-size: 20px;
+    text-shadow: 3px 3px 3px var(--dark);
 }
 
 /*footer*/
