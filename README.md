@@ -2,7 +2,7 @@
 
 ## Description
 
-A website that displays my contact information, skills and about me.
+A most updated portfolio that displays my contact information, skills and projects.
 
 ## Table of Contents
 
@@ -20,13 +20,17 @@ A website that displays my contact information, skills and about me.
 
 ---
 
-- Profile
+- Portfolio allows user/employer to see accomplishments, skills and contact information.
+
+- User/employer is able to send an email to me by clicking on my email address.
+
+- In addition, user/employer is able to view my social media and other related accounts through their corresponding icons.
+
+- If user/employer would like a copy of my resume they would just need to click on the person icon at the bottom of the page.
 
 ## Images
 
 ---
-
-_display a little about me, contact info, Linkedin, GitHub and resume_
 
 ![portfolio](./assets/site.gif)
 
@@ -40,10 +44,14 @@ _You can click on the option on the header to take you to each section_
 
 ## Skills
 
+---
+
 - HTML
 - CSS
 
 ## Resources Used
+
+---
 
 - [Google Fonts](https://fonts.google.com/)
 - [Google Icons](https://fonts.google.com/icons)
